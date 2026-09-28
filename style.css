@@ -1,0 +1,1291 @@
+
+/* ==========================================
+   CONFIGURACIÓN
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #03010b;
+
+    color: white;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* ==========================================
+   UNIVERSO
+========================================== */
+
+.space {
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: -5;
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            #25105c 0%,
+            #10052c 30%,
+            #03010b 70%
+        );
+}
+
+
+/* ==========================================
+   NEBULOSAS
+========================================== */
+
+.nebula {
+    position: absolute;
+
+    width: 700px;
+
+    height: 700px;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    opacity: .35;
+
+    animation:
+        nebulaMove 18s infinite alternate ease-in-out;
+}
+
+.nebula-one {
+    top: -250px;
+
+    left: -250px;
+
+    background:
+        radial-gradient(
+            circle,
+            #a72fff,
+            transparent 65%
+        );
+}
+
+.nebula-two {
+    right: -300px;
+
+    bottom: -250px;
+
+    background:
+        radial-gradient(
+            circle,
+            #ff268c,
+            transparent 65%
+        );
+
+    animation-delay: -8s;
+}
+
+
+/* ==========================================
+   ESTRELLAS
+========================================== */
+
+.stars {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        radial-gradient(
+            white 1px,
+            transparent 1px
+        );
+
+    background-size: 70px 70px;
+
+    opacity: .6;
+
+    animation:
+        starsMove 50s linear infinite;
+}
+
+.stars-two {
+    background-size: 130px 130px;
+
+    opacity: .4;
+
+    animation-duration: 80s;
+}
+
+.stars-three {
+    background-size: 210px 210px;
+
+    opacity: .25;
+
+    animation-duration: 120s;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    padding: 30px 20px;
+}
+
+.hero-content {
+    max-width: 950px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+.eyebrow {
+    color: #ff91cb;
+
+    letter-spacing: 5px;
+
+    font-size: 12px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size:
+        clamp(
+            55px,
+            10vw,
+            120px
+        );
+
+    line-height: .95;
+
+    margin-bottom: 30px;
+
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff4ca4,
+            #fff,
+            #ff8bc6,
+            #fff,
+            #ff4ca4
+        );
+
+    background-size: 400%;
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+
+    animation:
+        galaxyText 7s linear infinite;
+}
+
+.typing {
+    min-height: 40px;
+
+    font-size:
+        clamp(
+            20px,
+            4vw,
+            32px
+        );
+
+    color: #ffc4e2;
+
+    font-weight: 600;
+}
+
+.cursor {
+    color: #ff4fa8;
+
+    animation:
+        blink .7s infinite;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    margin:
+        25px auto 0;
+
+    color: #d8cce8;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   BOTÓN BRILLANTE
+========================================== */
+
+.glow-button {
+    margin-top: 35px;
+
+    padding:
+        17px 35px;
+
+    border: 1px solid
+        rgba(255,255,255,.3);
+
+    border-radius: 50px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            90deg,
+            #9d1dff,
+            #ff238e
+        );
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 20px
+        rgba(255,35,142,.35);
+
+    transition:
+        .35s ease;
+}
+
+.glow-button:hover {
+    transform:
+        translateY(-5px)
+        scale(1.05);
+
+    box-shadow:
+        0 0 50px
+        rgba(255,35,142,.7);
+}
+
+
+/* ==========================================
+   PLANETAS
+========================================== */
+
+.planet {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.planet-one {
+    width: 170px;
+
+    height: 170px;
+
+    left: 8%;
+
+    top: 18%;
+
+    background:
+        radial-gradient(
+            circle at 30% 30%,
+            #ffb1dc,
+            #b52c93 45%,
+            #36104e
+        );
+
+    box-shadow:
+        0 0 80px
+        rgba(255,70,180,.4);
+
+    animation:
+        floatPlanet 8s infinite ease-in-out;
+}
+
+.planet-two {
+    width: 80px;
+
+    height: 80px;
+
+    right: 12%;
+
+    bottom: 18%;
+
+    background:
+        radial-gradient(
+            circle at 30% 30%,
+            #d5b6ff,
+            #6427a8 50%,
+            #1b0934
+        );
+
+    box-shadow:
+        0 0 50px
+        rgba(160,80,255,.4);
+
+    animation:
+        floatPlanet 6s infinite ease-in-out reverse;
+}
+
+
+/* ==========================================
+   SCROLL
+========================================== */
+
+.scroll-down {
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    color: #bfa9d0;
+
+    font-size: 25px;
+
+    animation:
+        scrollBounce 2s infinite;
+}
+
+.scroll-down span {
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================
+   SECCIONES
+========================================== */
+
+.section {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding:
+        130px 0;
+}
+
+.section-title {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size:
+        clamp(
+            30px,
+            5vw,
+            50px
+        );
+}
+
+.section-title span {
+    color: #ff5bab;
+
+    font-size: 25px;
+}
+
+.center-text {
+    text-align: center;
+
+    color: #cbbdd7;
+
+    line-height: 1.8;
+
+    margin-bottom: 45px;
+}
+
+
+/* ==========================================
+   FRASES
+========================================== */
+
+.quote-card {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding:
+        65px 45px;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.09),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    backdrop-filter:
+        blur(20px);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.3);
+
+    position: relative;
+}
+
+.quote-mark {
+    font-size: 100px;
+
+    color: #ff4ca5;
+
+    line-height: .5;
+}
+
+.quote-card p {
+    min-height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #f4e4ef;
+
+    font-size:
+        clamp(
+            20px,
+            3vw,
+            30px
+        );
+
+    line-height: 1.6;
+
+    transition:
+        opacity .4s;
+}
+
+.quote-author {
+    color: #ff9ccc;
+
+    margin-top: 25px;
+}
+
+.small-button {
+    margin-top: 30px;
+
+    padding:
+        12px 24px;
+
+    border-radius: 30px;
+
+    border: 1px solid
+        rgba(255,255,255,.2);
+
+    background:
+        rgba(255,255,255,.07);
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   CARTA
+========================================== */
+
+.letter-section {
+    text-align: center;
+}
+
+.envelope {
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 60px 30px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.1),
+            rgba(255,255,255,.03)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    backdrop-filter:
+        blur(15px);
+}
+
+.envelope-icon {
+    font-size: 80px;
+
+    animation:
+        floatIcon 3s infinite ease-in-out;
+}
+
+.envelope h2 {
+    margin:
+        25px 0 15px;
+
+    font-size:
+        clamp(
+            30px,
+            5vw,
+            50px
+        );
+}
+
+.envelope p {
+    color: #cdbbd6;
+}
+
+.letter {
+    max-width: 850px;
+
+    margin: 60px auto 0;
+
+    padding:
+        60px 45px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.1),
+            rgba(255,255,255,.04)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.18);
+
+    box-shadow:
+        0 30px 100px
+        rgba(0,0,0,.4);
+
+    animation:
+        appear 1s ease;
+}
+
+.letter-decoration {
+    color: #ff65b4;
+
+    font-size: 25px;
+
+    margin-bottom: 30px;
+}
+
+.letter h2 {
+    font-size: 35px;
+
+    margin-bottom: 30px;
+}
+
+.letter p {
+    color: #eadbe8;
+
+    font-size: 19px;
+
+    line-height: 2;
+}
+
+.signature {
+    margin-top: 35px;
+
+    color: #ff9ccd;
+
+    line-height: 2;
+}
+
+
+/* ==========================================
+   CONTADOR
+========================================== */
+
+.counter {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.time-box {
+    width: 170px;
+
+    padding:
+        30px 15px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    backdrop-filter:
+        blur(12px);
+
+    transition: .3s;
+}
+
+.time-box:hover {
+    transform:
+        translateY(-10px);
+
+    border-color:
+        rgba(255,90,180,.5);
+}
+
+.time-box span {
+    display: block;
+
+    color: #ff66b6;
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 0 25px
+        rgba(255,80,170,.5);
+}
+
+.time-box small {
+    color: #a995b5;
+
+    letter-spacing: 3px;
+}
+
+
+/* ==========================================
+   CONSTELACIÓN
+========================================== */
+
+.constellation {
+    width: 600px;
+
+    max-width: 100%;
+
+    height: 400px;
+
+    margin: auto;
+
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(130,70,255,.08),
+            transparent 60%
+        );
+}
+
+.star {
+    position: absolute;
+
+    color: white;
+
+    font-size: 25px;
+
+    text-shadow:
+        0 0 20px white;
+
+    animation:
+        starGlow 2s infinite alternate;
+}
+
+.s1 {
+    left: 10%;
+    top: 60%;
+}
+
+.s2 {
+    left: 25%;
+    top: 30%;
+}
+
+.s3 {
+    left: 45%;
+    top: 50%;
+}
+
+.s4 {
+    left: 65%;
+    top: 20%;
+}
+
+.s5 {
+    left: 78%;
+    top: 55%;
+}
+
+.s6 {
+    left: 90%;
+    top: 35%;
+}
+
+.line {
+    position: absolute;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,150,220,.7),
+            transparent
+        );
+
+    transform-origin: left center;
+}
+
+.l1 {
+    width: 190px;
+
+    left: 12%;
+
+    top: 60%;
+
+    transform:
+        rotate(-22deg);
+}
+
+.l2 {
+    width: 180px;
+
+    left: 28%;
+
+    top: 31%;
+
+    transform:
+        rotate(25deg);
+}
+
+.l3 {
+    width: 150px;
+
+    left: 46%;
+
+    top: 50%;
+
+    transform:
+        rotate(-30deg);
+}
+
+.l4 {
+    width: 160px;
+
+    left: 66%;
+
+    top: 21%;
+
+    transform:
+        rotate(28deg);
+}
+
+.l5 {
+    width: 120px;
+
+    left: 79%;
+
+    top: 55%;
+
+    transform:
+        rotate(-35deg);
+}
+
+.constellation-heart {
+    position: absolute;
+
+    left: 48%;
+
+    top: 72%;
+
+    font-size: 45px;
+
+    animation:
+        heartPulse 1.5s infinite;
+}
+
+
+/* ==========================================
+   RAZONES
+========================================== */
+
+.reasons-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(230px,1fr)
+        );
+
+    gap: 20px;
+}
+
+.reason-card {
+    min-height: 180px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    transition: .4s;
+}
+
+.reason-card:hover {
+    transform:
+        translateY(-8px)
+        rotate(1deg);
+
+    background:
+        rgba(255,60,160,.1);
+}
+
+.reason-card .icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.reason-card h3 {
+    margin-bottom: 10px;
+
+    color: #ff9dca;
+}
+
+.reason-card p {
+    color: #cbbcd5;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   FINAL
+========================================== */
+
+.final-section {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding:
+        100px 20px;
+
+    position: relative;
+}
+
+.final-content {
+    max-width: 900px;
+}
+
+.final-content h2 {
+    font-size:
+        clamp(
+            40px,
+            7vw,
+            80px
+        );
+
+    margin-bottom: 20px;
+}
+
+.final-content > p {
+    color: #cdbed8;
+
+    font-size: 20px;
+}
+
+.surprise {
+    margin-top: 60px;
+
+    padding:
+        60px 30px;
+
+    border-radius: 35px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,40,150,.16),
+            rgba(255,255,255,.03)
+        );
+
+    border:
+        1px solid
+        rgba(255,100,190,.2);
+
+    animation:
+        appear 1.2s ease;
+}
+
+.super-heart {
+    font-size: 130px;
+
+    animation:
+        heartPulse 1.2s infinite;
+}
+
+.surprise h3 {
+    font-size:
+        clamp(
+            30px,
+            5vw,
+            55px
+        );
+
+    color: #ff91c9;
+
+    margin: 20px 0;
+}
+
+.surprise p {
+    color: #eaddea;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+.infinity {
+    font-size: 100px;
+
+    color: #ff60b1;
+
+    text-shadow:
+        0 0 30px
+        rgba(255,80,180,.7);
+
+    margin: 20px;
+}
+
+.final-phrase {
+    margin-top: 30px;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    padding: 50px 20px;
+
+    text-align: center;
+
+    color: #8d789a;
+
+    line-height: 2;
+}
+
+
+/* ==========================================
+   OCULTO
+========================================== */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* ==========================================
+   ANIMACIONES
+========================================== */
+
+@keyframes galaxyText {
+
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+@keyframes blink {
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes nebulaMove {
+
+    from {
+        transform:
+            translate(-50px,-30px)
+            scale(1);
+    }
+
+    to {
+        transform:
+            translate(100px,80px)
+            scale(1.3);
+    }
+}
+
+@keyframes starsMove {
+
+    from {
+        transform:
+            translateY(0);
+    }
+
+    to {
+        transform:
+            translateY(100px);
+    }
+}
+
+@keyframes floatPlanet {
+
+    0%,100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-25px);
+    }
+}
+
+@keyframes scrollBounce {
+
+    0%,100% {
+        transform:
+            translate(-50%,0);
+    }
+
+    50% {
+        transform:
+            translate(-50%,10px);
+    }
+}
+
+@keyframes floatIcon {
+
+    0%,100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-15px);
+    }
+}
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(.97);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+@keyframes starGlow {
+
+    from {
+        opacity: .4;
+
+        transform:
+            scale(.8);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            scale(1.3);
+    }
+}
+
+@keyframes heartPulse {
+
+    0%,100% {
+        transform:
+            scale(1);
+    }
+
+    50% {
+        transform:
+            scale(1.25);
+    }
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 700px) {
+
+    .planet-one {
+        width: 90px;
+
+        height: 90px;
+
+        left: 2%;
+
+        top: 10%;
+    }
+
+    .planet-two {
+        width: 50px;
+
+        height: 50px;
+
+        right: 5%;
+    }
+
+    .section {
+        padding:
+            90px 0;
+    }
+
+    .quote-card {
+        padding:
+            45px 20px;
+    }
+
+    .letter {
+        padding:
+            40px 20px;
+    }
+
+    .letter h2 {
+        font-size: 28px;
+    }
+
+    .letter p {
+        font-size: 17px;
+    }
+
+    .time-box {
+        width: 135px;
+    }
+
+    .time-box span {
+        font-size: 38px;
+    }
+
+    .constellation {
+        height: 300px;
+    }
+
+    .final-section {
+        padding:
+            80px 15px;
+    }
+
+}

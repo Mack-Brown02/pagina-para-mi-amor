@@ -1,0 +1,75 @@
+
+{
+    "nombre": "Mi amor",
+
+    "frases": [
+        "Si pudiera elegir un lugar en todo el universo, elegiría estar contigo.",
+        "No necesito mirar las estrellas para encontrar algo hermoso; solo necesito mirarte a ti.",
+        "Entre millones de personas, millones de caminos y millones de posibilidades, nuestras vidas se encontraron.",
+        "Eres ese pequeño milagro que nunca sabía que estaba esperando.",
+        "Si el amor fuera una galaxia, tú serías mi universo entero.",
+        "Contigo aprendí que los momentos más sencillos pueden convertirse en los recuerdos más importantes.",
+        "No prometo que todos los días serán perfectos, pero sí quiero que los días difíciles nunca nos hagan olvidar los buenos.",
+        "Hay personas que llegan y pasan; tú llegaste y dejaste una historia.",
+        "Mi lugar favorito no está en un mapa. Está donde estás tú.",
+        "Si pudiera volver al día en que te conocí, volvería a elegir acercarme a ti.",
+        "No sé cuántas vidas existen en el universo, pero en esta quiero compartir muchos momentos contigo.",
+        "Tu sonrisa tiene algo que hace que cualquier día parezca un poco mejor.",
+        "A veces me pregunto cómo tuve tanta suerte de coincidir contigo.",
+        "No quiero una historia perfecta; quiero una historia real que podamos construir juntos.",
+        "Eres una de esas personas que hacen que uno agradezca haber coincidido en el momento correcto.",
+        "Si el tiempo pudiera detenerse, escogería uno de nuestros mejores momentos.",
+        "Mi parte favorita de muchos de mis días es saber que existes.",
+        "No necesito un universo perfecto mientras tenga un pequeño lugar en el tuyo.",
+        "Quizá las estrellas no sepan nuestros nombres, pero yo sé exactamente quién eres para mí.",
+        "Hay millones de estrellas en el cielo y aun así mis ojos siempre terminan buscando una sola luz.",
+        "Quiero seguir acumulando momentos contigo hasta que los recuerdos sean demasiados para contarlos.",
+        "No sé qué nos espera mañana, pero me gusta imaginar que todavía habrá momentos contigo.",
+        "Te quiero por quien eres y por la persona que me permites ser cuando estoy contigo.",
+        "Entre todas las casualidades de la vida, tú eres mi favorita.",
+        "Si nuestra historia fuera una constelación, cada recuerdo sería una estrella.",
+        "No importa cuán grande sea el universo; contigo mi mundo se siente completo."
+    ],
+
+    "carta": "Desde que llegaste a mi vida, algo cambió. No fue necesariamente algo grande o imposible de explicar; fueron pequeños detalles, momentos, conversaciones, risas y recuerdos que poco a poco comenzaron a significar mucho para mí. A veces pienso en todas las personas que existen, en todos los lugares del mundo y en todas las casualidades que tuvieron que ocurrir para que nuestras vidas se cruzaran. Y entre tantas posibilidades, aquí estamos. Quiero que sepas que eres una persona muy especial para mí. No quiero prometerte una vida perfecta porque nadie puede saber qué traerá el futuro. Pero sí puedo decirte que quiero seguir creando momentos contigo, seguir conociéndote, seguir riéndome contigo y guardar cada recuerdo bonito que podamos construir. Si algún día miramos hacia atrás, quiero que podamos decir que aprovechamos cada momento que tuvimos. Gracias por existir, gracias por estar y gracias por formar parte de mi historia. ❤️",
+
+    "firma": "Con todo mi amor",
+
+    "razones": [
+        {
+            "icono": "❤️",
+            "titulo": "Tu forma de ser",
+            "texto": "Hay algo en tu manera de ser que hace que quiera seguir conociéndote cada día."
+        },
+        {
+            "icono": "😊",
+            "titulo": "Tu sonrisa",
+            "texto": "Porque una sonrisa tuya puede cambiar completamente el ambiente de un día."
+        },
+        {
+            "icono": "✨",
+            "titulo": "Tu esencia",
+            "texto": "No eres especial por parecerte a alguien; eres especial precisamente por ser tú."
+        },
+        {
+            "icono": "🥰",
+            "titulo": "Los momentos",
+            "texto": "Me encantan esos pequeños momentos que quizás parecen simples, pero terminan quedándose en la memoria."
+        },
+        {
+            "icono": "🌙",
+            "titulo": "Tu compañía",
+            "texto": "Hasta un momento tranquilo se siente diferente cuando puedo compartirlo contigo."
+        },
+        {
+            "icono": "🌌",
+            "titulo": "Nuestro universo",
+            "texto": "De todas las historias que pudieron existir, me alegra que exista esta que estamos escribiendo."
+        }
+    ],
+
+    "sorpresa": {
+        "titulo": "Te elegiría una y otra vez ❤️",
+        "mensaje": "Si pudiera volver al principio y vivir nuevamente cada momento que nos trajo hasta aquí, volvería a elegir encontrarte. Porque entre millones de personas, millones de caminos y millones de estrellas, tú terminaste siendo una parte muy especial de mi universo."
+    }
+}

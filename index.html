@@ -1,0 +1,529 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Un universo para ti ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =================================
+         FONDO DEL UNIVERSO
+    ================================== -->
+
+    <div class="space">
+
+        <div class="nebula nebula-one"></div>
+
+        <div class="nebula nebula-two"></div>
+
+        <div class="stars"></div>
+
+        <div class="stars stars-two"></div>
+
+        <div class="stars stars-three"></div>
+
+    </div>
+
+
+    <!-- =================================
+         PARTÍCULAS
+    ================================== -->
+
+    <div id="particles"></div>
+
+
+    <!-- =================================
+         CORAZONES
+    ================================== -->
+
+    <div id="hearts"></div>
+
+
+    <!-- =================================
+         CONTENIDO
+    ================================== -->
+
+    <main>
+
+
+        <!-- ==============================
+             HERO
+        =============================== -->
+
+        <section class="hero">
+
+            <div class="planet planet-one"></div>
+
+            <div class="planet planet-two"></div>
+
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ✦ UNA HISTORIA ENTRE MILLONES DE ESTRELLAS ✦
+                </p>
+
+
+                <h1>
+                    Para ti,
+                    <span id="nameHero">
+                        mi amor
+                    </span>
+                    ❤️
+                </h1>
+
+
+                <div class="typing">
+
+                    <span id="typingText"></span>
+
+                    <span class="cursor">
+                        |
+                    </span>
+
+                </div>
+
+
+                <p class="hero-description">
+
+                    Si el universo tuviera infinitas
+                    posibilidades, volvería a buscarte
+                    hasta encontrarte.
+
+                </p>
+
+
+                <button
+                    id="startButton"
+                    class="glow-button"
+                >
+
+                    ✨ Entrar a nuestro universo
+
+                </button>
+
+            </div>
+
+
+            <div class="scroll-down">
+
+                ↓
+
+                <span>
+                    descubre
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             FRASES
+        =============================== -->
+
+        <section
+            id="quotes"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <span>
+                    ✦
+                </span>
+
+                <h2>
+                    Pensamientos que me haces sentir
+                </h2>
+
+                <span>
+                    ✦
+                </span>
+
+            </div>
+
+
+            <div class="quote-card">
+
+                <div class="quote-mark">
+                    “
+                </div>
+
+                <p id="quoteText">
+                    Cargando...
+                </p>
+
+                <div class="quote-author">
+                    — De mí para ti ❤️
+                </div>
+
+                <button
+                    id="nextQuote"
+                    class="small-button"
+                >
+
+                    Otra frase ✨
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             CARTA
+        =============================== -->
+
+        <section
+            id="letterSection"
+            class="section letter-section"
+        >
+
+            <div class="envelope">
+
+                <div class="envelope-icon">
+                    💌
+                </div>
+
+                <h2>
+                    Tengo algo que decirte...
+                </h2>
+
+                <p>
+                    Algo que no cabe en un simple mensaje.
+                </p>
+
+                <button
+                    id="openLetter"
+                    class="glow-button"
+                >
+
+                    Abrir mi carta ❤️
+
+                </button>
+
+            </div>
+
+
+            <div
+                id="letter"
+                class="letter hidden"
+            >
+
+                <div class="letter-decoration">
+                    ✦ ❤️ ✦
+                </div>
+
+                <h2>
+                    Para la persona que hace
+                    especial mi mundo
+                </h2>
+
+                <p id="message"></p>
+
+                <div class="signature">
+
+                    Con todo mi amor,
+
+                    <br>
+
+                    <strong id="signature">
+                        ❤️
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             CONTADOR
+        =============================== -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <span>✦</span>
+
+                <h2>
+                    Nuestro tiempo
+                </h2>
+
+                <span>✦</span>
+
+            </div>
+
+
+            <p class="center-text">
+                Cada segundo cuenta cuando se trata de ti.
+            </p>
+
+
+            <div class="counter">
+
+                <div class="time-box">
+
+                    <span id="days">
+                        0
+                    </span>
+
+                    <small>
+                        DÍAS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="hours">
+                        0
+                    </span>
+
+                    <small>
+                        HORAS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="minutes">
+                        0
+                    </span>
+
+                    <small>
+                        MINUTOS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="seconds">
+                        0
+                    </span>
+
+                    <small>
+                        SEGUNDOS
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             CONSTELACIÓN
+        =============================== -->
+
+        <section class="section constellation-section">
+
+            <div class="section-title">
+
+                <span>✦</span>
+
+                <h2>
+                    Nuestra constelación
+                </h2>
+
+                <span>✦</span>
+
+            </div>
+
+
+            <p class="center-text">
+
+                Algunas personas creen que las estrellas
+                están separadas.
+
+                <br>
+
+                Yo creo que algunas están destinadas
+                a encontrarse.
+
+            </p>
+
+
+            <div class="constellation">
+
+                <div class="star s1">✦</div>
+                <div class="star s2">✦</div>
+                <div class="star s3">✦</div>
+                <div class="star s4">✦</div>
+                <div class="star s5">✦</div>
+                <div class="star s6">✦</div>
+
+                <div class="line l1"></div>
+                <div class="line l2"></div>
+                <div class="line l3"></div>
+                <div class="line l4"></div>
+                <div class="line l5"></div>
+
+                <div class="constellation-heart">
+                    ❤️
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             FRASES ESPECIALES
+        =============================== -->
+
+        <section class="section reasons">
+
+            <div class="section-title">
+
+                <span>✦</span>
+
+                <h2>
+                    Cosas que amo de ti
+                </h2>
+
+                <span>✦</span>
+
+            </div>
+
+
+            <div
+                id="reasonsContainer"
+                class="reasons-grid"
+            >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==============================
+             SORPRESA
+        =============================== -->
+
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <p class="eyebrow">
+                    ✦ HASTA EL INFINITO ✦
+                </p>
+
+
+                <h2>
+                    Y todavía falta una cosa...
+                </h2>
+
+
+                <p>
+                    Hay algo que quiero que descubras.
+                </p>
+
+
+                <button
+                    id="surpriseButton"
+                    class="glow-button"
+                >
+
+                    🌌 Descubrir la sorpresa
+
+                </button>
+
+
+                <div
+                    id="surprise"
+                    class="surprise hidden"
+                >
+
+                    <div class="super-heart">
+                        ❤️
+                    </div>
+
+
+                    <h3 id="surpriseTitle">
+                        Te elegiría una y otra vez
+                    </h3>
+
+
+                    <p id="surpriseText">
+                    </p>
+
+
+                    <div class="infinity">
+                        ∞
+                    </div>
+
+
+                    <p class="final-phrase">
+                        Porque entre tantos universos,
+                        <strong>
+                            el mío siempre te buscaría a ti.
+                        </strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div>
+            ✦ ❤️ ✦
+        </div>
+
+        Hecho especialmente para ti.
+
+        <div>
+            Siempre tú.
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
+
